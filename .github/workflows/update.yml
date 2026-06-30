@@ -36,15 +36,18 @@ jobs:
       run: python extract_toffee.py
 
     - name: Commit and Push changes
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        
-        if [ -f "toffee_data.json" ]; then
-          git add toffee_data.json
-          git commit -m "🔁 Auto-updated Toffee subscription data" || echo "No changes to commit"
-          git push
-        else
-          echo "⚠️ Error: toffee_data.json was not generated."
-          exit 1
-        fi
+  run: |
+    git config --global user.name "github-actions[bot]"
+    git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    
+    # 1. Add the newly generated JSON file
+    git add toffee_data.json
+    
+    # 2. Only commit if there are actual updates to the file
+    git diff-index --quiet HEAD || git commit -m "Update Toffee live stream token [skip ci]"
+    
+    # 3. Pull down remote changes first to prevent the 'rejected' error
+    git pull --rebase origin main
+    
+    # 4. Push safely back to the repository
+    git push origin main
