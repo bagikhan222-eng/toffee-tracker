@@ -4,7 +4,7 @@ import requests
 import sys
 
 # Change this URL if you find a different API endpoint via your F12 Network inspection
-TOFFEE_API_URL = "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je66q0v9189838959za200zb9193602521zd9193602521&_p=1782790199788&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1486718028&_eu=AAAAAGQC&_fid=cj13SDHY0BiSrD0zAyOYXh&cid=1184542220.1782739083&frm=0&pscdl=noapi&rcb=18&sr=1366x768&ul=en-us&gaf=2&_s=3&tag_exp=115616986~115938466~115938469~119027224~119576881~119576885~119576891~119576895&sid=1782789372&sct=3&seg=1&dl=https://toffeelive.com/en&dt=Toffee - Watch Live TV, Sports, Movies, Web Series, Drama&en=user_engagement&ep.origin=firebase&_et=6066&tfd=83970" 
+TOFFEE_API_URL = "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je66q0v9189838959za200zb9193602521zd9193602521&_p=1782790283367&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=733222192&_eu=AAAAAGQC&_fid=cj13SDHY0BiSrD0zAyOYXh&cid=1184542220.1782739083&frm=0&pscdl=noapi&rcb=6&sr=1366x768&ul=en&gaf=2&_s=7&tag_exp=115938466~115938469~118395334~119027224~119576881~119576885~119576891~119576895&dt=Toffee - Watch Live TV, Sports, Movies, Web Series, Drama&dp=/live&sid=1782792317&sct=4&seg=1&dl=https://toffeelive.com/en/live&en=page_viewed&_ee=1&ep.origin=firebase&ep.provider_id=toffee&ep.app_name=toffee-web-app&ep.app_version=4.6.0&ep.device_id=4f461bbf19c238125079f0bed578e058&ep.subscriber_type=REGISTERED&ep.connection=wifi&ep.subscriber_id=e6bca542-e6e3-4e8a-8756-882165c7a579&ep.msisdn=8801998711620&ep.page_name=Live TV&ep.page_url=https://toffeelive.com/live&_et=8587&tfd=2282237" 
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
