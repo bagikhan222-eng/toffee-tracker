@@ -1,14 +1,10 @@
 import json
-import requests
 
-def run_multi_channel_extraction():
+def run_extraction():
     print("✅ Mobile profile cookies injected.")
     print("✅ Authorization payload injected.")
-    print("Connecting to Toffee Mobile Core Gateway API...\n")
+    print("Connecting to Toffee Mobile Core Gateway...\n")
 
-    # Dynamic open-source endpoint mirror tracking active Toffee signatures
-    gateway_url = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
-    
     try:
         print("📡 Pulling live broadcast matrix arrays...")
         response = requests.get(gateway_url, timeout=15)
