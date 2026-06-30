@@ -1,11 +1,12 @@
-name: Toffee Token Extractor
+name: Toffee Tracker Auto Update
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Automatically runs every 30 minutes
-  workflow_dispatch: # Allows you to manually trigger it with a click button
+    - cron: '0 */1 * * *' # Runs automatically every 4 hours
+  workflow_dispatch:      # <-- THIS MUST BE HERE FOR THE BUTTON TO SHOW UP
 
 jobs:
+  # ... rest of your workflow file
   build:
     runs-on: ubuntu-latest
     steps:
