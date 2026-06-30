@@ -26,10 +26,15 @@ jobs:
         run: python extract_toffee.py
 
       - name: Commit and Push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add toffee_data.json
-          git diff-index --quiet HEAD || git commit -m "Update Toffee live stream token [skip ci]"
-          git pull --rebase origin main
-          git push origin main
+  run: |
+    git config --global user.name "github-actions[bot]"
+    git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    
+    # Track all newly generated files
+    git add toffee_data.json Ns_player.m3u OTT_Navigator.m3u
+    
+    # Commit changes if any of the three files modified
+    git diff-index --quiet HEAD || git commit -m "Update live streaming assets [skip ci]"
+    
+    git pull --rebase origin main
+    git push origin main
