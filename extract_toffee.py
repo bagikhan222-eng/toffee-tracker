@@ -4,7 +4,7 @@ import requests
 import sys
 
 # The actual mobile app API gateway used to load the channel components
-TOFFEE_API_URL = "https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?gsessionid=YEKy8fNXDnhFPJK4O8lMg_7Gln6Sfift9nyS9lm7p_y_DggKWkLSFw&VER=8&database=projects/prj-tof-analytics/databases/(default)&RID=rpc&SID=N2_OZ7f-PKK1MluRyGtlCQ&AID=47&CI=0&TYPE=xmlhttp&zx=1hr2e8fzdb7e&t=1"
+TOFFEE_API_URL = "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1782802409~Starts=1782802109~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=uQn5bEgN5NLSyoIOpfwn58A5pGVW9ZtR3cy93jKtGz03LlvFVh52HfHHXvbvdWcs0_CuDWv4ohvphQ5fKa9SDg"
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
