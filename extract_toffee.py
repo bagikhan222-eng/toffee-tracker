@@ -3,7 +3,7 @@ import json
 import requests
 import sys
 
-TOFFEE_API_URL = "https://prod-services.toffeelive.com/subscription/v1/subscriber/7f086965-7c9a-4192-b1b8-83b6ecfb90ef/subscription?offset=1&limit=100&multi_status=ACTIVE,PENDING"
+TOFFEE_API_URL = "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je66q0v9189838959za200zb9193602521zd9193602521&_p=1782789372230&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=1486718028&_eu=AAAAAGQC&_fid=cj13SDHY0BiSrD0zAyOYXh&cid=1184542220.1782739083&frm=0&pscdl=noapi&rcb=10&sr=1366x768&ul=en-us&gaf=2&_s=4&tag_exp=115616985~115938465~115938468~118897920~118897930~119027224~119576881~119576885~119576891~119576895&sid=1782789372&sct=3&seg=1&dl=https://toffeelive.com/en/account/profile&dt=Account & Settings - Toffee&en=user_engagement&ep.origin=firebase&_et=3682&tfd=97517"
 
 # .strip() cleanly removes accidental spaces or newline characters (\n) 
 # that might have broken the HTTP headers
