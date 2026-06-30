@@ -4,7 +4,7 @@ import requests
 import sys
 
 # The actual mobile app API gateway used to load the channel components
-TOFFEE_API_URL = "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1782802409~Starts=1782802109~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=uQn5bEgN5NLSyoIOpfwn58A5pGVW9ZtR3cy93jKtGz03LlvFVh52HfHHXvbvdWcs0_CuDWv4ohvphQ5fKa9SDg"
+TOFFEE_API_URL = "https://assets-prod.services.toffeelive.com/w_480,q_75,f_webp/8zijEZ8B23Y4IFgz7c8R/posters/4167454a-00e3-4413-aad7-661889b3f402.png"
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
