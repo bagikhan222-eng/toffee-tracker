@@ -4,7 +4,7 @@ import requests
 import sys
 
 # The actual mobile app API gateway used to load the channel components
-TOFFEE_API_URL = "https://edge.api.toffeelive.com/api/v1.1/home"
+TOFFEE_API_URL = "https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?gsessionid=YEKy8fNXDnhFPJK4O8lMg_7Gln6Sfift9nyS9lm7p_y_DggKWkLSFw&VER=8&database=projects/prj-tof-analytics/databases/(default)&RID=rpc&SID=N2_OZ7f-PKK1MluRyGtlCQ&AID=47&CI=0&TYPE=xmlhttp&zx=1hr2e8fzdb7e&t=1"
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
