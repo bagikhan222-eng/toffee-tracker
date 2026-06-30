@@ -4,7 +4,7 @@ import requests
 import sys
 
 # Change this URL if you find a different API endpoint via your F12 Network inspection
-TOFFEE_API_URL = "https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects/prj-tof-analytics/databases/(default)&RID=57572&CVER=22&X-HTTP-Session-Id=gsessionid&zx=yjwylv43bckd&t=1" 
+TOFFEE_API_URL = "https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects/prj-tof-analytics/databases/(default)&gsessionid=ZxOZG47CngH7OAF90Dg3tTCRwOX4VB8gLmeuGedMnXvP1OomU5WHig&SID=fB3i3WI3SrajYw5W394uiw&RID=41536&AID=34&zx=xl1m5gj44j3k&t=1" 
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
