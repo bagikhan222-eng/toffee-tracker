@@ -2,7 +2,7 @@ name: Toffee Tracker Auto Update
 
 on:
   schedule:
-    - cron: '0 */.01 * * *' # Automatically updates every 3 hours
+    - cron: '0 */.25 * * *' # Automatically updates every 3 hours
   workflow_dispatch:      # Forcefully enables the manual "Run workflow" trigger button
 
 # Give the workflow explicit permission to write file commits back into your repository
