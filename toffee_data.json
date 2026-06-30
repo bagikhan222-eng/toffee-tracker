@@ -5,6 +5,7 @@
         {
             "name": "FIFA World Cup Live 1",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-1/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -14,6 +15,7 @@
         {
             "name": "FIFA World Cup Live 2",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-2/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -23,6 +25,7 @@
         {
             "name": "FIFA World Cup Live 3",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-3/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -32,6 +35,7 @@
         {
             "name": "FIFA World Cup Live 4",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-4/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -41,6 +45,7 @@
         {
             "name": "FIFA World Cup Live 5",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-5/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -50,6 +55,7 @@
         {
             "name": "FIFA World Cup Live 6",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-6/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -59,6 +65,7 @@
         {
             "name": "FIFA World Cup Live 7",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-7/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -68,6 +75,7 @@
         {
             "name": "FIFA World Cup Live 8",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-8/index.m3u8",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -77,6 +85,7 @@
         {
             "name": "Sony Ten Sports 1 HD",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/sony-ten-1/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/sony-ten-1.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -86,6 +95,7 @@
         {
             "name": "Zee Bangla",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/zee-bangla/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/zee-bangla.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -95,6 +105,7 @@
         {
             "name": "BTV World",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/btv-world/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/btv-world.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -104,6 +115,7 @@
         {
             "name": "Cartoon Network",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/cartoon-network/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/cartoon-network.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -113,6 +125,7 @@
         {
             "name": "CNN",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/cnn/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/cnn.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -122,6 +135,7 @@
         {
             "name": "Jamuna TV",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/jamuna-tv/index.m3u8",
+            "logo": "https://toffeelive.com/images/channels/jamuna-tv.png",
             "headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
