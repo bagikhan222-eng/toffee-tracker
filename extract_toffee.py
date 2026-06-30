@@ -1,7 +1,7 @@
 import requests
 
 # 1. Your stream URL and headers as before
-stream_url = "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1782802409~Starts=1782802109~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=uQn5bEgN5NLSyoIOpfwn58A5pGVW9ZtR3cy93jKtGz03LlvFVh52HfHHXvbvdWcs0_CuDWv4ohvphQ5fKa9SDg"
+stream_url = "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-6/0/master_200020260630064802680.ts?hdntl=Expires=1782888509~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=AeQsclCl2-P1zk3AMSNJM0ohZS5YkPhrL_AvwzHFYqqXmuscDRI7rSWV0ICkspY2a9gWivDkaxuZBKng6IfjbBweiEUE"
 headers = {
     "User-Agent": "Mozilla/5.0 ...",
     "Origin": "https://toffeelive.com"
