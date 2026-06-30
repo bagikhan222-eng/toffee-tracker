@@ -1,0 +1,38 @@
+name: Auto Update Toffee Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-node-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Run Extraction Script
+      env:
+        TOFFEE_COOKIE: ${{ secrets.TOFFEE_COOKIE }}
+        TOFFEE_AUTH_TOKEN: ${{ secrets.TOFFEE_AUTH_TOKEN }}
+      run: python extract_toffee.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add toffee_data.json
+        git commit -m "🔁 Auto-updated Toffee subscription data" || exit 0
+        git push
