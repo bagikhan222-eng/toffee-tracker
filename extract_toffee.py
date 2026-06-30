@@ -4,7 +4,7 @@ import requests
 import sys
 
 # Change this URL if you find a different API endpoint via your F12 Network inspection
-TOFFEE_API_URL = "https://toffeelive.com/en/collections/5024eb274066fe74ee0b3d0239aa2fbc>; rel="alternate"; hreflang="en", <https://toffeelive.com/bn/collections/5024eb274066fe74ee0b3d0239aa2fbc>; rel="alternate"; hreflang="bn", <https://toffeelive.com/collections/5024eb274066fe74ee0b3d0239aa2fbc>; rel="alternate"; hreflang="x-default" 
+TOFFEE_API_URL = "https://toffeelive.com/en/collections/5024eb274066fe74ee0b3d0239aa2fbc?_rsc=1m5z1" 
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
