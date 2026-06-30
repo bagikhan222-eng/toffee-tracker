@@ -1,7 +1,79 @@
 {
-    "channels_amount": 7,
+    "channels_amount": 14,
     "status": "active",
     "channels": [
+        {
+            "name": "FIFA World Cup Live 1",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-1/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-1"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 2",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-2/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-2"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 3",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-3/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-3"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 4",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-4/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-4"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 5",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-5/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-5"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 6",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-6/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-6"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 7",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-7/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-7"
+            }
+        },
+        {
+            "name": "FIFA World Cup Live 8",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-8/index.m3u8",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/en/live/FIFA-2026-8"
+            }
+        },
         {
             "name": "Sony Ten Sports 1 HD",
             "link": "https://bldcmprod-cdn.toffeelive.com/live/sony-ten-1/index.m3u8",
@@ -54,15 +126,6 @@
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
                 "Referer": "https://toffeelive.com/en/live/jamuna-tv"
-            }
-        },
-        {
-            "name": "Ekattor TV",
-            "link": "https://bldcmprod-cdn.toffeelive.com/live/ekattor-tv/index.m3u8",
-            "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/en/live/ekattor-tv"
             }
         }
     ]
