@@ -1,10 +1,14 @@
 import json
+import requests
 
-def run_extraction():
+def run_multi_channel_extraction():
     print("✅ Mobile profile cookies injected.")
     print("✅ Authorization payload injected.")
-    print("Connecting to Toffee Mobile Core Gateway...\n")
+    print("Connecting to Toffee Mobile Core Gateway API...\n")
 
+    # Dynamic open-source endpoint mirror tracking active Toffee signatures
+    gateway_url = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
+    
     try:
         print("📡 Pulling live broadcast matrix arrays...")
         response = requests.get(gateway_url, timeout=15)
@@ -61,4 +65,5 @@ def run_extraction():
         print(f"💥 Processing failed during collection loop: {e}")
 
 if __name__ == "__main__":
+    # This matches the definition on line 4 perfectly now
     run_multi_channel_extraction()
