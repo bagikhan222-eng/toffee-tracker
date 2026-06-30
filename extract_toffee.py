@@ -1,12 +1,39 @@
 import os
 import json
-import requests
+import subprocess
 import sys
+import requests
 
-# Ensure this URL matches the exact JSON asset or API route you copied from F12
-TOFFEE_API_URL = "https://toffeelive.com/en/collections/5024eb274066fe74ee0b3d0239aa2fbc?_rsc=1m5z1" 
+# The foundational endpoint for the Live TV matrix
+TOFFEE_API_URL = "https://api.toffeelive.com/api/v2/home/live-tv"
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
+
+def run_yt_dlp_fallback():
+    print("🔄 Initiating platform extractor engine...")
+    try:
+        # We query the landing page using yt-dlp to dump the underlying channel layout JSON
+        result = subprocess.run(
+            ["yt-dlp", "--dump-json", "https://toffeelive.com/en/live-tv"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        
+        channels = []
+        for line in result.stdout.splitlines():
+            if line.strip():
+                channels.append(json.loads(line))
+                
+        return {
+            "success": True,
+            "source": "extractor_engine",
+            "channels_count": len(channels),
+            "channels": channels
+        }
+    except Exception as e:
+        print(f"💥 Extractor engine fallback failed: {e}")
+        return None
 
 def fetch_toffee_data():
     headers = {
@@ -14,49 +41,46 @@ def fetch_toffee_data():
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://toffeelive.com",
         "Referer": "https://toffeelive.com/",
+        "X-Platform": "Web"
     }
     
     if COOKIE_DATA:
         headers["Cookie"] = COOKIE_DATA
-        print("✅ Cookie loaded.")
     if AUTH_TOKEN:
         headers["Authorization"] = AUTH_TOKEN if "Bearer" in AUTH_TOKEN else f"Bearer {AUTH_TOKEN}"
-        print("✅ Auth Token loaded.")
+    
+    output_file = "toffee_data.json"
     
     try:
-        print("Sending request to Toffee URL...")
-        response = requests.get(TOFFEE_API_URL, headers=headers, timeout=15)
-        
-        print(f"API Response Status Code: {response.status_code}")
-        
-        # Verify content is JSON before parsing
+        print("Attempting connection to raw Toffee API subdomain...")
+        response = requests.get(TOFFEE_API_URL, headers=headers, timeout=12)
         content_type = response.headers.get('Content-Type', '')
-        print(f"Content-Type received: {content_type}")
         
-        output_file = "toffee_data.json"
-        
-        if "application/json" in content_type or response.text.strip().startswith(("{", "[")):
+        if response.status_code == 200 and "application/json" in content_type:
             raw_data = response.json()
-            
-            # Format nicely
-            channel_payload = {
+            payload = {
                 "success": True,
-                "channels": raw_data.get("data", raw_data) if isinstance(raw_data, dict) else raw_data
+                "source": "direct_api",
+                "channels": raw_data.get("data", raw_data)
             }
-            
             with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(channel_payload, f, indent=4, ensure_ascii=False)
-            print(f"🎉 JSON extraction successful! Saved to {output_file}")
-            
-        else:
-            print("⚠️ Server sent text/HTML instead of JSON. The URL might be wrong or geo-blocked.")
-            print("--- Snippet of received response ---")
-            print(response.text[:1000]) # Prints the HTML structure to help you debug
-            print("-------------------------------------")
-            sys.exit(1)
+                json.dump(payload, f, indent=4, ensure_ascii=False)
+            print(f"🎉 API JSON extraction successful! Saved to {output_file}")
+            return
             
     except Exception as e:
-        print(f"💥 Error processing data stream: {e}")
+        print(f"Direct connection timed out or was refused: {e}")
+    
+    # If direct API fails or returns HTML, engage the fallback engine
+    print("⚠️ Direct API route blocked or unavailable. Falling back to extractor framework...")
+    fallback_data = run_yt_dlp_fallback()
+    
+    if fallback_data:
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(fallback_data, f, indent=4, ensure_ascii=False)
+        print(f"🎉 Successfully generated channels data via extractor framework to {output_file}")
+    else:
+        print("❌ Both retrieval pathways failed.")
         sys.exit(1)
 
 if __name__ == "__main__":
