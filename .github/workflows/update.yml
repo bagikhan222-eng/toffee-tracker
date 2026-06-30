@@ -2,40 +2,47 @@ name: Toffee Tracker Auto Update
 
 on:
   schedule:
-    - cron: '0 */1 * * *' # Runs automatically every 4 hours
-  workflow_dispatch:      # <-- THIS MUST BE HERE FOR THE BUTTON TO SHOW UP
+    - cron: '0 */1 * * *' # Automatically updates every 3 hours
+  workflow_dispatch:      # Forcefully enables the manual "Run workflow" trigger button
+
+# Give the workflow explicit permission to write file commits back into your repository
+permissions:
+  contents: write
 
 jobs:
-  # ... rest of your workflow file
-  build:
+  build_and_extract:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repository Code
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
-      - name: Set up Python
+      - name: Set up Python Environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
-        run: pip install requests
+      - name: Install Network Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      - name: Run Script
+      - name: Run Extraction Engine
         run: python extract_toffee.py
 
-      - name: Commit and Push changes
-  run: |
-    git config --global user.name "github-actions[bot]"
-    git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    
-    # Track all newly generated files
-    git add toffee_data.json Ns_player.m3u OTT_Navigator.m3u
-    
-    # Commit changes if any of the three files modified
-    git diff-index --quiet HEAD || git commit -m "Update live streaming assets [skip ci]"
-    
-    git pull --rebase origin main
-    git push origin main
+      - name: Commit and Push Generated Playlists
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # Stage all required data files
+          git add toffee_data.json Ns_player.m3u OTT_Navigator.m3u
+          
+          # Only execute commit if at least one file has tracking updates
+          git diff-index --quiet HEAD || git commit -m "Update live streaming playlists [skip ci]"
+          
+          # Handle sync issues cleanly before pushing
+          git pull --rebase origin main
+          git push origin main
