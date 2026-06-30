@@ -1,0 +1,4 @@
+{
+    "status": "success",
+    "message": "Authenticated successfully, endpoint returned no body (204 No Content)."
+}
