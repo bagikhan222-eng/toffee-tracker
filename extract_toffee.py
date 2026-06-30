@@ -3,10 +3,12 @@ import json
 import requests
 import sys
 
-# Update this URL with the exact one from your F12 Network inspection tab
-TOFFEE_API_URL = "https://prod-services.toffeelive.com/subscription/v1/subscriber/7f086965-7c9a-4192-b1b8-83b6ecfb90ef/subscription?offset=1&limit=100&multi_status=ACTIVE,PENDING" 
-COOKIE_DATA = os.getenv("TOFFEE_COOKIE")
-AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN")
+TOFFEE_API_URL = "https://prod-services.toffeelive.com/subscription/v1/subscriber/7f086965-7c9a-4192-b1b8-83b6ecfb90ef/subscription?offset=1&limit=100&multi_status=ACTIVE,PENDING"
+
+# .strip() cleanly removes accidental spaces or newline characters (\n) 
+# that might have broken the HTTP headers
+COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
+AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
 def fetch_toffee_data():
     headers = {
@@ -14,15 +16,20 @@ def fetch_toffee_data():
         "Accept": "application/json, text/plain, */*",
         "Origin": "https://toffeelive.com",
         "Referer": "https://toffeelive.com/",
-        "Cookie": COOKIE_DATA,
     }
     
-    # Only add authorization header if it's explicitly passed
+    # Safely inject headers only if they are not empty strings
+    if COOKIE_DATA:
+        headers["Cookie"] = COOKIE_DATA
+        print("✅ Cookie sanitized and loaded.")
+    else:
+        print("⚠️ Warning: TOFFEE_COOKIE is empty.")
+
     if AUTH_TOKEN:
         headers["Authorization"] = f"Bearer {AUTH_TOKEN}"
+        print("✅ Auth Token sanitized and loaded.")
     
     try:
-        print(True if COOKIE_DATA else False, "Cookie detected.")
         print("Sending request to Toffee API...")
         response = requests.get(TOFFEE_API_URL, headers=headers, timeout=15)
         
@@ -36,8 +43,8 @@ def fetch_toffee_data():
             print(f"🎉 Successfully extracted data and saved to {output_file}")
         else:
             print("❌ Server rejected request. Response body snapshot:")
-            print(response.text[:500]) # Prints the first 500 characters of the error
-            sys.exit(1) # Force Python to exit with an error so GitHub logs it cleanly
+            print(response.text[:500])
+            sys.exit(1)
             
     except Exception as e:
         print(f"💥 An unexpected script error occurred: {e}")
