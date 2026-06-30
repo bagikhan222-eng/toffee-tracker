@@ -1,73 +1,68 @@
 import json
+import requests
 
-def run_extraction():
+def run_multi_channel_extraction():
     print("✅ Mobile profile cookies injected.")
     print("✅ Authorization payload injected.")
-    print("Connecting to Toffee Mobile Core Gateway...\n")
+    print("Connecting to Toffee Mobile Core Gateway API...\n")
 
-    # 1. The stream configuration
-    channel_name = "FIFA Live 6 (2026)"
-    original_url = (
-        "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/index.m3u8"
-        "?edge-cache-token=Expires=1782807280~Starts=1782806980"
-        "~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20"
-        "~Signature=M8DNdD5DicqR7rW_4bpCEbSFBk3VpvzrEp3DXKgz6FfZMH6UMLfoDnJ82IujbpWlnwOBx33vW5SfDDUcVtISAw"
-    )
-    # 2. The stream configuration
-    channel_name = "FIFA Live 6 (2026)"
-    original_url = (
-        "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-2/index.m3u8"
-        "?edge-cache-token=Expires=1782807429~Starts=1782807129"
-        "~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20"
-        "~Signature=y4Y79QMpN-9kfIfVjQM37T8g8rKfQjQvYUNXRDszedynIoBJ-zsYJyC9hLAvXpacv3HNm6PuJVvpbLGHFjpWAA"
-    )
-    # 3. The stream configuration
-    channel_name = "FIFA Live 6 (2026)"
-    original_url = (
-        "https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-3/index.m3u8"
-        "?edge-cache-token=Expires=1782807516~Starts=1782807216"
-        "~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20"
-        "~Signature=XwbyhHwv8PglbZVv8fqtAXqtLl73Y5m06H22a7xW6zyeSs9RDEGBpG12UO6jtuBFJnKTnaO7k_b2rPDBCjiNDw"
-    )
-
-    # Use the public mirror domain that bypasses localized DNS blocks
-    working_url = original_url.replace("prod-cdn01-live.toffeelive.com", "bldcmprod-cdn.toffeelive.com")
+    # Dynamic open-source endpoint mirror tracking active Toffee signatures
+    gateway_url = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-        "Origin": "https://toffeelive.com",
-        "Referer": "https://toffeelive.com/",
-        "Accept": "*/*"
-    }
-
-    # 2. Structure the data regardless of the token's expiration state
-    output_data = {
-        "channels_amount": 1,
-        "status": "active",
-        "channels": [
-            {
-                "name": channel_name,
-                "link": working_url,
-                "headers": {
-                    "User-Agent": headers["User-Agent"],
-                    "Origin": headers["Origin"],
-                    "Referer": headers["Referer"]
-                }
-            }
-        ]
-    }
-    
-    # 3. Generate and save the file forcefully
     try:
-        file_name = "toffee_data.json"
-        with open(file_name, "w", encoding="utf-8") as json_file:
-            json.dump(output_data, json_file, indent=4, ensure_ascii=False)
+        print("📡 Pulling live broadcast matrix arrays...")
+        response = requests.get(gateway_url, timeout=15)
+        
+        if response.status_code == 200:
+            raw_index = response.json()
+            extracted_channels = raw_index.get("channels", [])
+            total_count = len(extracted_channels)
             
-        print(f"💾 File forcefully generated: '{file_name}'")
-        print("💡 Note: The JSON structure is saved. Your GitHub Actions can now push this file.")
+            # 1. Initialize the multiple-channel structural layout
+            output_payload = {
+                "channels_amount": total_count,
+                "status": "active",
+                "channels": []
+            }
+            
+            # 2. Iterate through every available channel found on the network
+            for item in extracted_channels:
+                channel_name = item.get("name", "Unknown Channel")
+                stream_url = item.get("link", "")
+                
+                # Check for and swap unresolvable host addresses to public CDN
+                if "prod-cdn01-live.toffeelive.com" in stream_url:
+                    stream_url = stream_url.replace("prod-cdn01-live.toffeelive.com", "bldcmprod-cdn.toffeelive.com")
+                
+                # Safe-extract headers and edge-cookies
+                source_headers = item.get("headers", {})
+                cookie_signature = source_headers.get("cookie") or source_headers.get("Cookie") or ""
+
+                # 3. Formulate the dictionary layout block for each entry
+                channel_block = {
+                    "name": channel_name,
+                    "link": stream_url,
+                    "headers": {
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                        "Origin": "https://toffeelive.com",
+                        "Referer": "https://toffeelive.com/",
+                        "Cookie": cookie_signature
+                    }
+                }
+                output_payload["channels"].append(channel_block)
+            
+            # 4. Dump the complete list directly to file
+            file_name = "toffee_data.json"
+            with open(file_name, "w", encoding="utf-8") as target_file:
+                json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
+                
+            print(f"🎉 Success! 'toffee_data.json' generated with {total_count} live channels.")
+            
+        else:
+            print(f"💥 Failed to hit Toffee gateway mirror. Status Code: {response.status_code}")
             
     except Exception as e:
-        print(f"💥 Error writing JSON file: {e}")
+        print(f"💥 Processing failed during collection loop: {e}")
 
 if __name__ == "__main__":
-    run_extraction()
+    run_multi_channel_extraction()
