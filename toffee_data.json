@@ -1,4 +1,15 @@
 {
-    "status": "success",
-    "message": "Authenticated successfully, endpoint returned no body (204 No Content)."
+    "channels_amount": 1,
+    "status": "active",
+    "channels": [
+        {
+            "name": "FIFA Live 6 (2026)",
+            "link": "https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-6/index.m3u8?edge-cache-token=Expires=1782802409~Starts=1782802109~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Signature=uQn5bEgN5NLSyoIOpfwn58A5pGVW9ZtR3cy93jKtGz03LlvFVh52HfHHXvbvdWcs0_CuDWv4ohvphQ5fKa9SDg",
+            "headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
+            }
+        }
+    ]
 }
