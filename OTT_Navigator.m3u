@@ -1,43 +1,43 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="FIFA World Cup Live 1",FIFA World Cup Live 1
+#EXTINF:-1 tvg-name="FIFA World Cup Live 1" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 1
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-1"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-1/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 2",FIFA World Cup Live 2
+#EXTINF:-1 tvg-name="FIFA World Cup Live 2" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 2
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-2"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-2/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 3",FIFA World Cup Live 3
+#EXTINF:-1 tvg-name="FIFA World Cup Live 3" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 3
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-3"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-3/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 4",FIFA World Cup Live 4
+#EXTINF:-1 tvg-name="FIFA World Cup Live 4" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 4
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-4"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-4/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 5",FIFA World Cup Live 5
+#EXTINF:-1 tvg-name="FIFA World Cup Live 5" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 5
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-5"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-5/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 6",FIFA World Cup Live 6
+#EXTINF:-1 tvg-name="FIFA World Cup Live 6" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 6
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-6"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-6/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 7",FIFA World Cup Live 7
+#EXTINF:-1 tvg-name="FIFA World Cup Live 7" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 7
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-7"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-7/index.m3u8
-#EXTINF:-1 tvg-name="FIFA World Cup Live 8",FIFA World Cup Live 8
+#EXTINF:-1 tvg-name="FIFA World Cup Live 8" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 8
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/FIFA-2026-8"}
 https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-8/index.m3u8
-#EXTINF:-1 tvg-name="Sony Ten Sports 1 HD",Sony Ten Sports 1 HD
+#EXTINF:-1 tvg-name="Sony Ten Sports 1 HD" tvg-logo="https://toffeelive.com/images/channels/sony-ten-1.png",Sony Ten Sports 1 HD
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/sony-ten-1"}
 https://bldcmprod-cdn.toffeelive.com/live/sony-ten-1/index.m3u8
-#EXTINF:-1 tvg-name="Zee Bangla",Zee Bangla
+#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://toffeelive.com/images/channels/zee-bangla.png",Zee Bangla
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/zee-bangla"}
 https://bldcmprod-cdn.toffeelive.com/live/zee-bangla/index.m3u8
-#EXTINF:-1 tvg-name="BTV World",BTV World
+#EXTINF:-1 tvg-name="BTV World" tvg-logo="https://toffeelive.com/images/channels/btv-world.png",BTV World
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/btv-world"}
 https://bldcmprod-cdn.toffeelive.com/live/btv-world/index.m3u8
-#EXTINF:-1 tvg-name="Cartoon Network",Cartoon Network
+#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://toffeelive.com/images/channels/cartoon-network.png",Cartoon Network
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/cartoon-network"}
 https://bldcmprod-cdn.toffeelive.com/live/cartoon-network/index.m3u8
-#EXTINF:-1 tvg-name="CNN",CNN
+#EXTINF:-1 tvg-name="CNN" tvg-logo="https://toffeelive.com/images/channels/cnn.png",CNN
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/cnn"}
 https://bldcmprod-cdn.toffeelive.com/live/cnn/index.m3u8
-#EXTINF:-1 tvg-name="Jamuna TV",Jamuna TV
+#EXTINF:-1 tvg-name="Jamuna TV" tvg-logo="https://toffeelive.com/images/channels/jamuna-tv.png",Jamuna TV
 #EXTHTTP:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/en/live/jamuna-tv"}
 https://bldcmprod-cdn.toffeelive.com/live/jamuna-tv/index.m3u8
