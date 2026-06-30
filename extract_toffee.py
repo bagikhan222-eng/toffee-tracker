@@ -4,7 +4,7 @@ import requests
 import sys
 
 # Change this URL if you find a different API endpoint via your F12 Network inspection
-TOFFEE_API_URL = "https://firestore.googleapis.com/google.firestore.v1.Firestore/Listen/channel?VER=8&database=projects/prj-tof-analytics/databases/(default)&gsessionid=ZxOZG47CngH7OAF90Dg3tTCRwOX4VB8gLmeuGedMnXvP1OomU5WHig&SID=fB3i3WI3SrajYw5W394uiw&RID=41536&AID=34&zx=xl1m5gj44j3k&t=1" 
+TOFFEE_API_URL = "https://analytics.google.com/g/collect?v=2&tid=G-02M4D9SN5F&gtm=45je66q0v9189838959za200zb9193602521zd9193602521&_p=1782792855478&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=733222192&_eu=AAAAAGQC&_fid=cj13SDHY0BiSrD0zAyOYXh&cid=1184542220.1782739083&frm=0&pscdl=noapi&rcb=13&sr=1366x768&ul=en-us&gaf=2&_s=4&tag_exp=115616986~115938466~115938469~118897920~118897930~119027224~119576881~119576885~119576891~119576895&sid=1782792317&sct=4&seg=1&dl=https://toffeelive.com/en/fifa-hub&dt=Toffee - Watch Live TV, Sports, Movies, Web Series, Drama&en=user_engagement&ep.origin=firebase&_et=2569&tfd=124951" 
 COOKIE_DATA = os.getenv("TOFFEE_COOKIE", "").strip()
 AUTH_TOKEN = os.getenv("TOFFEE_AUTH_TOKEN", "").strip()
 
