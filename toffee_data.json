@@ -1,90 +1,69 @@
 {
-    "channels_amount": 7,
-    "status": "active",
     "channels": [
         {
-            "name": "FIFA World Cup Live 1",
-            "short_name": "ENG vs DRC",
+            "name": "ENG vs DRC",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
-            "name": "FIFA World Cup Live 2",
-            "short_name": "BEL vs SEN",
+            "name": "BEL vs SEN",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_2/playlist.m3u8",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
-            "name": "FIFA World Cup Live 3",
-            "short_name": "USA vs BOS",
+            "name": "USA vs BOS",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_3/playlist.m3u8",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
-            "name": "FIFA World Cup Rewatch",
-            "short_name": "MATCH REWATCH",
+            "name": "MATCH REWATCH",
+            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_4/playlist.m3u8",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
-            "name": "Sony Ten Sports 1 HD",
-            "short_name": "Sony Ten 1",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8",
+            "name": "Sony Ten 1",
             "logo": "https://toffeelive.com/images/channels/sony_ten_1.png",
+            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
             "name": "Zee Bangla",
-            "short_name": "Zee Bangla",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
             "logo": "https://toffeelive.com/images/channels/zee_bangla.png",
+            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         },
         {
             "name": "Jamuna TV",
-            "short_name": "Jamuna TV",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
             "logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
+            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
             "headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
             }
         }
-    ]
+    ],
+    "channels_amount": 7,
+    "status": "active"
 }
