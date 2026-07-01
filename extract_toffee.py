@@ -2,16 +2,14 @@ import json
 import requests
 import re
 
-def scrape_toffee_standard_format():
+def scrape_toffee_monirul_format():
     print("✅ Mobile profile cookies injected.")
     print("✅ Authorization payload injected.")
     print("Connecting directly to Toffee Core Platform Gateway...")
 
     platform_url = "https://toffeelive.com"
-    # Secondary source fallback to harvest active session authorization cookies safely
     token_source = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
     
-    # Matching the exact root layout format
     output_payload = {
         "channels": [],
         "channels_amount": 0,
@@ -26,7 +24,7 @@ def scrape_toffee_standard_format():
     raw_channels = []
     auth_cookie = ""
 
-    # Grab active security signatures to ensure premium matching loads successfully
+    # Pull active streaming security tokens safely
     try:
         response = requests.get(token_source, timeout=10)
         if response.status_code == 200:
@@ -34,13 +32,13 @@ def scrape_toffee_standard_format():
             for ch in mirror_data.get("channels", []):
                 ck = ch.get("headers", {}).get("cookie") or ch.get("headers", {}).get("Cookie") or ""
                 if len(ck) > 30:
-                    auth_cookie = ck
+                    auth_cookie = ck.strip()
                     break
     except Exception:
         pass
 
     try:
-        print("📡 Pulling active broadcasting map data from public interface...")
+        print("📡 Pulling live map data from public interface script segments...")
         page_response = requests.get(platform_url, headers=headers, timeout=15)
         
         if page_response.status_code == 200:
@@ -61,9 +59,8 @@ def scrape_toffee_standard_format():
                     except:
                         continue
 
-        # Automated Fallback matching the snapshot dataset provided
         if not raw_channels:
-            print("💡 Web layout restricted. Applying live broadcasting match matrix templates...")
+            print("💡 Injecting live dashboard streaming layout placeholders...")
             raw_channels = [
                 {"name": "FIFA World Cup Live 1", "title": "ENG vs DRC", "slug": "fifa_2026_1"},
                 {"name": "FIFA World Cup Live 2", "title": "BEL vs SEN", "slug": "fifa_2026_2"},
@@ -79,7 +76,6 @@ def scrape_toffee_standard_format():
 
         for item in raw_channels:
             raw_name = item.get("name", "Live Channel").strip()
-            # Choose the actual live game text ("ENG vs DRC") over the generic slot title if available
             display_title = item.get("title") or item.get("short_name") or raw_name
             slug = item.get("slug") or item.get("id") or raw_name.lower().replace(" ", "_")
             link = f"https://bldcmprod-cdn.toffeelive.com/cdn/live/{slug}/playlist.m3u8"
@@ -91,9 +87,9 @@ def scrape_toffee_standard_format():
                 logo_url = item.get("logo") or f"https://toffeelive.com/images/channels/{slug}.png"
                 is_sports = False
 
-            # --- EXACT SM-MONIRULISLAM SCHEMA FORMAT MATCH ---
+            # Monirul standard format data blocks configuration properties
             channel_block = {
-                "name": display_title, # Replaces generic name with current live match-up pairs
+                "name": display_title,
                 "logo": logo_url,
                 "link": link,
                 "headers": {
@@ -107,43 +103,41 @@ def scrape_toffee_standard_format():
             else:
                 general_group.append(channel_block)
 
-        # Merge arrays to push tournament updates to the top position indexes
         output_payload["channels"] = sports_group + general_group
         output_payload["channels_amount"] = len(output_payload["channels"])
 
-        # Write out the target toffee_data.json configuration
+        # 1. Output toffee_data.json
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
-        print("🎉 'toffee_data.json' formatted and updated.")
+        print("🎉 'toffee_data.json' matching monirul format layout updated.")
 
-        # Write formatting out into Ns_player.m3u
+        # 2. Output Ns_player.m3u (Monirul Format: Pipes with low-case headers syntax configuration)
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
             ns_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
                 ua = ch["headers"]["user-agent"]
-                cookie_str = ch["headers"]["cookie"]
-                cookie_suffix = f"&Cookie={cookie_str}" if cookie_str else ""
+                ck = ch["headers"]["cookie"]
+                
+                # Monirul style syntax layout logic for Network Stream Player
                 ns_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{ch["name"]}\n')
-                ns_file.write(f'{ch["link"]}|User-Agent={ua}&Origin=https://toffeelive.com&Referer=https://toffeelive.com/{cookie_suffix}\n')
-        print("🎉 'Ns_player.m3u' updated.")
+                ns_file.write(f'{ch["link"]}|User-Agent={ua}&Cookie={ck}\n')
+        print("🎉 'Ns_player.m3u' matching monirul format layout updated.")
 
-        # Write formatting out into OTT_Navigator.m3u
+        # 3. Output OTT_Navigator.m3u (Monirul Format: #EXTHTTP JSON blocks)
         with open("OTT_Navigator.m3u", "w", encoding="utf-8") as ott_file:
             ott_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
                 ua = ch["headers"]["user-agent"]
-                cookie_str = ch["headers"]["cookie"]
+                ck = ch["headers"]["cookie"]
                 
+                # Monirul format structural logic layout configuration for OTT Navigator
                 ott_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{ch["name"]}\n')
-                if cookie_str:
-                    ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/","Cookie":"{cookie_str}"}}\n')
-                else:
-                    ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/"}}\n')
+                ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Cookie":"{ck}"}}\n')
                 ott_file.write(f'{ch["link"]}\n')
-        print("🎉 'OTT_Navigator.m3u' updated.")
+        print("🎉 'OTT_Navigator.m3u' matching monirul format layout updated.")
 
     except Exception as pipeline_error:
-        print(f"💥 Compilation failed: {pipeline_error}")
+        print(f"💥 Extraction script tracking crashed: {pipeline_error}")
 
 if __name__ == "__main__":
-    scrape_toffee_standard_format()
+    scrape_toffee_monirul_format()
