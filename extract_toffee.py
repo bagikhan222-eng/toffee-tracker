@@ -6,8 +6,8 @@ def run_comprehensive_extraction():
     print("✅ Authorization payload injected.")
     print("Connecting to Toffee Mobile Core Gateway...\n")
 
-    # Upstream data provider mirror
-    token_source = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/main/toffee_channel_data.json"
+    # Corrected dynamic data branch path mirror endpoint
+    token_source = "https://raw.githubusercontent.com/Gtajisan/Toffee-Auto-Update-Playlist/codex/rename-binod-xd-to-gtajisan/toffee_channel_data.json"
     
     output_payload = {
         "channels_amount": 0,
@@ -45,18 +45,18 @@ def run_comprehensive_extraction():
         }
         output_payload["channels"].append(channel_block)
 
-    # 2. Extract Generic Live TV - Filtering for Active Status Flags Natively
+    # 2. Extract Generic Live TV - Filtering out inactive streams
     try:
-        print("📡 Syncing live catalog data from mirror stream repository...")
-        response = requests.get(token_source, timeout=10)
+        print("📡 Syncing live catalog data from verified branch...")
+        response = requests.get(token_source, timeout=12)
         
         items = []
         if response.status_code == 200:
             try:
                 mirror_json = response.json()
                 items = mirror_json.get("channels", [])
-            except Exception:
-                pass
+            except Exception as parse_error:
+                print(f"⚠️ JSON structure matching failed: {parse_error}")
 
         active_count = 0
         skipped_count = 0
@@ -66,22 +66,24 @@ def run_comprehensive_extraction():
             link = item.get("link", "")
             item_headers = item.get("headers", {})
             
-            # Extract cookies defensively across case mismatches
+            # Extract session authorization strings cleanly
             cookie = item_headers.get("cookie") or item_headers.get("Cookie") or ""
 
-            # --- CRITICAL FILTER RULES FOR ACTIVE STREAMS ---
-            # 1. Skip duplicate entries of manually handled tournament nodes
+            # Skip staging components if they are manual tournament duplicates
             if "fifa" in name.lower() or "fifa" in link.lower():
                 continue
             
-            # 2. Skip channels if the token signature is missing, expired, or truncated (dead links)
-            if not link or not cookie or len(cookie.strip()) < 25:
+            # Drop entries if the streaming keys are missing or expired
+            if not link or not cookie or len(cookie.strip()) < 20:
                 skipped_count += 1
                 continue
 
-            # Re-calculate correct clean slug matching properties
-            parts = link.split('/live/')
-            slug = parts[1].split('/')[0] if len(parts) > 1 else name.lower().replace(" ", "_")
+            # Parse structural folder slugs cleanly
+            if '/live/' in link:
+                slug = link.split('/live/')[1].split('/')[0]
+            else:
+                slug = name.lower().replace(" ", "_")
+                
             logo_image = f"https://toffeelive.com/images/channels/{slug}.png"
             
             channel_block = {
@@ -92,7 +94,8 @@ def run_comprehensive_extraction():
                 "headers": {
                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
                     "Origin": "https://toffeelive.com",
-                    "Referer": "https://toffeelive.com/"
+                    "Referer": "https://toffeelive.com/",
+                    "Cookie": cookie
                 }
             }
             output_payload["channels"].append(channel_block)
@@ -101,33 +104,42 @@ def run_comprehensive_extraction():
         print(f"💡 Active live filters applied: Kept {active_count} channels, dropped {skipped_count} inactive entries.")
         output_payload["channels_amount"] = len(output_payload["channels"])
         
-        # Write files directly to disk
+        # Save output payloads directly to repository disk structures
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
         print("🎉 'toffee_data.json' updated successfully.")
 
-        # 3. Write Ns_player.m3u (Only active filtered channels)
+        # 3. Build filtered Ns_player.m3u
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
             ns_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
                 ua = ch["headers"]["User-Agent"]
                 origin = ch["headers"]["Origin"]
                 referer = ch["headers"]["Referer"]
+                cookie_str = ch["headers"].get("Cookie", "")
                 display_name = ch.get("short_name", ch["name"])
+                
+                # Append cookie headers into pipe strings if present
+                cookie_suffix = f"&Cookie={cookie_str}" if cookie_str else ""
                 ns_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{display_name}\n')
-                ns_file.write(f'{ch["link"]}|User-Agent={ua}&Origin={origin}&Referer={referer}\n')
+                ns_file.write(f'{ch["link"]}|User-Agent={ua}&Origin={origin}&Referer={referer}{cookie_suffix}\n')
         print("🎉 'Ns_player.m3u' updated successfully.")
 
-        # 4. Write OTT_Navigator.m3u (Only active filtered channels)
+        # 4. Build filtered OTT_Navigator.m3u
         with open("OTT_Navigator.m3u", "w", encoding="utf-8") as ott_file:
             ott_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
                 ua = ch["headers"]["User-Agent"]
                 origin = ch["headers"]["Origin"]
                 referer = ch["headers"]["Referer"]
+                cookie_str = ch["headers"].get("Cookie", "")
                 display_name = ch.get("short_name", ch["name"])
+                
                 ott_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{display_name}\n')
-                ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"{origin}","Referer":"{referer}"}}\n')
+                if cookie_str:
+                    ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"{origin}","Referer":"{referer}","Cookie":"{cookie_str}"}}\n')
+                else:
+                    ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"{origin}","Referer":"{referer}"}}\n')
                 ott_file.write(f'{ch["link"]}\n')
         print("🎉 'OTT_Navigator.m3u' updated successfully.")
 
