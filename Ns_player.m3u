@@ -1,29 +1,275 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="FIFA World Cup Live 1" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 1
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-1/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-1
-#EXTINF:-1 tvg-name="FIFA World Cup Live 2" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 2
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-2/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-2
-#EXTINF:-1 tvg-name="FIFA World Cup Live 3" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 3
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-3/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-3
-#EXTINF:-1 tvg-name="FIFA World Cup Live 4" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 4
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-4/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-4
-#EXTINF:-1 tvg-name="FIFA World Cup Live 5" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 5
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-5/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-5
-#EXTINF:-1 tvg-name="FIFA World Cup Live 6" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 6
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-6/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-6
-#EXTINF:-1 tvg-name="FIFA World Cup Live 7" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 7
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-7/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-7
-#EXTINF:-1 tvg-name="FIFA World Cup Live 8" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",FIFA World Cup Live 8
-https://bldcmprod-cdn.toffeelive.com/live/FIFA-2026-8/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/FIFA-2026-8
-#EXTINF:-1 tvg-name="Sony Ten Sports 1 HD" tvg-logo="https://toffeelive.com/images/channels/sony-ten-1.png",Sony Ten Sports 1 HD
-https://bldcmprod-cdn.toffeelive.com/live/sony-ten-1/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/sony-ten-1
-#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://toffeelive.com/images/channels/zee-bangla.png",Zee Bangla
-https://bldcmprod-cdn.toffeelive.com/live/zee-bangla/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/zee-bangla
-#EXTINF:-1 tvg-name="BTV World" tvg-logo="https://toffeelive.com/images/channels/btv-world.png",BTV World
-https://bldcmprod-cdn.toffeelive.com/live/btv-world/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/btv-world
-#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://toffeelive.com/images/channels/cartoon-network.png",Cartoon Network
-https://bldcmprod-cdn.toffeelive.com/live/cartoon-network/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/cartoon-network
-#EXTINF:-1 tvg-name="CNN" tvg-logo="https://toffeelive.com/images/channels/cnn.png",CNN
-https://bldcmprod-cdn.toffeelive.com/live/cnn/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/cnn
-#EXTINF:-1 tvg-name="Jamuna TV" tvg-logo="https://toffeelive.com/images/channels/jamuna-tv.png",Jamuna TV
-https://bldcmprod-cdn.toffeelive.com/live/jamuna-tv/index.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/en/live/jamuna-tv
+#EXTINF:-1 tvg-name="FIFA Live 1" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",ARG vs FRA
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 2" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",BRA vs GER
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_2/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 3" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",ENG vs ESP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_3/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 4" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",POR vs ITA
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_4/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 5" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",LIVE MATCH 5
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_5/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 6" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",LIVE MATCH 6
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_6/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 7" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",LIVE MATCH 7
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_7/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="FIFA Live 8" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",LIVE MATCH 8
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_8/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Bangla" tvg-logo="https://toffeelive.com/images/channels/zee_bangla.png",Zee Bangla
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Star Jalsha VIP" tvg-logo="https://toffeelive.com/images/channels/star_jalsha.png",Star Jalsha VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/star_jalsha/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Somoy TV" tvg-logo="https://toffeelive.com/images/channels/somoy_tv.png",Somoy TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 2 HD" tvg-logo="https://toffeelive.com/images/channels/sony_ten2_hd.png",SONY SPORTS TEN 2 HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten2_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Jalsha Movies VIP" tvg-logo="https://toffeelive.com/images/channels/jalsha_movies.png",Jalsha Movies VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/jalsha_movies/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 5 HD" tvg-logo="https://toffeelive.com/images/channels/sony_six_hd.png",SONY SPORTS TEN 5 HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_six_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 1 HD" tvg-logo="https://toffeelive.com/images/channels/sony_ten1_hd.png",SONY SPORTS TEN 1 HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten1_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Sony Aat" tvg-logo="https://toffeelive.com/images/channels/sony_aath.png",Sony Aat
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_aath/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Colors Bangla" tvg-logo="https://toffeelive.com/images/channels/colors_b.png",Colors Bangla
+https://bldcmprod-cdn.toffeelive.com/cdn/live/colors_b/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TOFFEE Sports VIP" tvg-logo="https://toffeelive.com/images/channels/sports_highlights.png",TOFFEE Sports VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sports_highlights/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 3 HD" tvg-logo="https://toffeelive.com/images/channels/sony_ten3_hd.png",SONY SPORTS TEN 3 HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten3_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 1" tvg-logo="https://toffeelive.com/images/channels/ten_1.png",SONY SPORTS TEN 1
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ten_1/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 2" tvg-logo="https://toffeelive.com/images/channels/ten_2.png",SONY SPORTS TEN 2
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ten_2/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 3" tvg-logo="https://toffeelive.com/images/channels/ten_3.png",SONY SPORTS TEN 3
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ten_3/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SPORTS TEN 5" tvg-logo="https://toffeelive.com/images/channels/sony_six.png",SONY SPORTS TEN 5
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_six/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Euro Sport HD" tvg-logo="https://toffeelive.com/images/channels/euro_sports_hd.png",Euro Sport HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Euro Sport" tvg-logo="https://toffeelive.com/images/channels/euro_sports_sd.png",Euro Sport
+https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_sports_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Ekattor TV" tvg-logo="https://toffeelive.com/images/channels/ekattor_hd.png",Ekattor TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ekattor_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Independent TV" tvg-logo="https://toffeelive.com/images/channels/independent.png",Independent TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/independent/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Channel 24" tvg-logo="https://toffeelive.com/images/channels/channel_24.png",Channel 24
+https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_24/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="DBC News" tvg-logo="https://toffeelive.com/images/channels/dbc_news.png",DBC News
+https://bldcmprod-cdn.toffeelive.com/cdn/live/dbc_news/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="ATN News" tvg-logo="https://toffeelive.com/images/channels/atn_news.png",ATN News
+https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_news/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="NEWS24" tvg-logo="https://toffeelive.com/images/channels/news24hd.png",NEWS24
+https://bldcmprod-cdn.toffeelive.com/cdn/live/news24hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Jamuna TV" tvg-logo="https://toffeelive.com/images/channels/jamuna_tv.png",Jamuna TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SATV HD" tvg-logo="https://toffeelive.com/images/channels/satv_hd.png",SATV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/satv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Global TV HD" tvg-logo="https://toffeelive.com/images/channels/global_tv.png",Global TV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/global_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="RTV" tvg-logo="https://toffeelive.com/images/channels/rtv_b.png",RTV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/rtv_b/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="NTV" tvg-logo="https://toffeelive.com/images/channels/ntv_b.png",NTV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ntv_b/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Banglavision" tvg-logo="https://toffeelive.com/images/channels/bangla_vision.png",Banglavision
+https://bldcmprod-cdn.toffeelive.com/cdn/live/bangla_vision/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="ATN Bangla" tvg-logo="https://toffeelive.com/images/channels/atn_bangla.png",ATN Bangla
+https://bldcmprod-cdn.toffeelive.com/cdn/live/atn_bangla/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Ananda TV" tvg-logo="https://toffeelive.com/images/channels/ananda_tv.png",Ananda TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ananda_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Boishakhi TV" tvg-logo="https://toffeelive.com/images/channels/boishakhi.png",Boishakhi TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/boishakhi/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Channel 9" tvg-logo="https://toffeelive.com/images/channels/channel_9.png",Channel 9
+https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_9/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Mohona TV" tvg-logo="https://toffeelive.com/images/channels/mohona_tv.png",Mohona TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/mohona_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="MY TV" tvg-logo="https://toffeelive.com/images/channels/my_tv.png",MY TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/my_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="BTV HD" tvg-logo="https://toffeelive.com/images/channels/btv_hd.png",BTV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Bijoy TV" tvg-logo="https://toffeelive.com/images/channels/bijoy_tv.png",Bijoy TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/bijoy_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Asian TV HD" tvg-logo="https://toffeelive.com/images/channels/asian_tv_hd.png",Asian TV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/asian_tv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Bangla TV" tvg-logo="https://toffeelive.com/images/channels/bangla_tv_hd.png",Bangla TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/bangla_tv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Nagorik TV" tvg-logo="https://toffeelive.com/images/channels/nagorik_tv_hd.png",Nagorik TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nagorik_tv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Nexus TV" tvg-logo="https://toffeelive.com/images/channels/nexus_tv.png",Nexus TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nexus_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Sangsad TV" tvg-logo="https://toffeelive.com/images/channels/btv_sangshodh.png",Sangsad TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_sangshodh/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TOFFEE Dramas" tvg-logo="https://toffeelive.com/images/channels/toffee_drama.png",TOFFEE Dramas
+https://bldcmprod-cdn.toffeelive.com/cdn/live/toffee_drama/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="BTV World" tvg-logo="https://toffeelive.com/images/channels/btv_world.png",BTV World
+https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_world/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Ekushey TV" tvg-logo="https://toffeelive.com/images/channels/ekushey_tv.png",Ekushey TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ekushey_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="BTV Chattogram" tvg-logo="https://toffeelive.com/images/channels/btv_ctg.png",BTV Chattogram
+https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_ctg/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Star Gold VIP" tvg-logo="https://toffeelive.com/images/channels/star_gold.png",Star Gold VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/star_gold/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Star Plus VIP" tvg-logo="https://toffeelive.com/images/channels/star_plus.png",Star Plus VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/star_plus/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Star Bharat VIP" tvg-logo="https://toffeelive.com/images/channels/star_bharat.png",Star Bharat VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/star_bharat/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY MAX HD" tvg-logo="https://toffeelive.com/images/channels/set_max_hd.png",SONY MAX HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/set_max_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY MAX" tvg-logo="https://toffeelive.com/images/channels/sony_max.png",SONY MAX
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_max/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY ENTERTAINMENT TELEVISION HD" tvg-logo="https://toffeelive.com/images/channels/sony_entertainmnt_hd.png",SONY ENTERTAINMENT TELEVISION HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_entertainmnt_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY ENTERTAINMENT TELEVISION" tvg-logo="https://toffeelive.com/images/channels/sony_entertainment.png",SONY ENTERTAINMENT TELEVISION
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_entertainment/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SAB HD" tvg-logo="https://toffeelive.com/images/channels/sony_sab_hd.png",SONY SAB HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sab_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY SAB" tvg-logo="https://toffeelive.com/images/channels/sony_sab.png",SONY SAB
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sab/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY MAX 2" tvg-logo="https://toffeelive.com/images/channels/sony_max_2.png",SONY MAX 2
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_max_2/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY WAH" tvg-logo="https://toffeelive.com/images/channels/sony_wah.png",SONY WAH
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_wah/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Sony Pal" tvg-logo="https://toffeelive.com/images/channels/sony_pal.png",Sony Pal
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_pal/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee TV HD" tvg-logo="https://toffeelive.com/images/channels/zee_tv_hd.png",Zee TV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_tv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Anmol" tvg-logo="https://toffeelive.com/images/channels/zee_anmol.png",Zee Anmol
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_anmol/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Colors" tvg-logo="https://toffeelive.com/images/channels/colors.png",Colors
+https://bldcmprod-cdn.toffeelive.com/cdn/live/colors/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Colors Rishtey" tvg-logo="https://toffeelive.com/images/channels/colors_rishtey.png",Colors Rishtey
+https://bldcmprod-cdn.toffeelive.com/cdn/live/colors_rishtey/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="&TV HD" tvg-logo="https://toffeelive.com/images/channels/and_tv_hd.png",&TV HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="& Pictures HD" tvg-logo="https://toffeelive.com/images/channels/and_picture_hd.png",& Pictures HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/and_picture_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Nick" tvg-logo="https://toffeelive.com/images/channels/nick.png",Nick
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nick/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Cartoon Network HD" tvg-logo="https://toffeelive.com/images/channels/cartoon_network_hd.png",Cartoon Network HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Cartoon Network" tvg-logo="https://toffeelive.com/images/channels/cartoon_network_sd.png",Cartoon Network
+https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY YAY" tvg-logo="https://toffeelive.com/images/channels/sony_yay.png",SONY YAY
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_yay/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Sonic" tvg-logo="https://toffeelive.com/images/channels/sonic.png",Sonic
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sonic/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery Kids" tvg-logo="https://toffeelive.com/images/channels/discovery_kids.png",Discovery Kids
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_kids/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Nick Jr" tvg-logo="https://toffeelive.com/images/channels/nick_junior.png",Nick Jr
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nick_junior/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Pogo" tvg-logo="https://toffeelive.com/images/channels/pogo_sd.png",Pogo
+https://bldcmprod-cdn.toffeelive.com/cdn/live/pogo_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Bangla Cinema" tvg-logo="https://toffeelive.com/images/channels/zee_bangla_cinema.png",Zee Bangla Cinema
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla_cinema/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Jalsha Movies VIP" tvg-logo="https://toffeelive.com/images/channels/jalsha_movies.png",Jalsha Movies VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/jalsha_movies/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Colors Bangla Cinema" tvg-logo="https://toffeelive.com/images/channels/colors_bangla_cinema.png",Colors Bangla Cinema
+https://bldcmprod-cdn.toffeelive.com/cdn/live/colors_bangla_cinema/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TOFFEE Movies VIP" tvg-logo="https://toffeelive.com/images/channels/sports_live_01.png",TOFFEE Movies VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sports_live_01/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Cinema HD" tvg-logo="https://toffeelive.com/images/channels/zee_cinema_hd.png",Zee Cinema HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_cinema_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="B4U Movies" tvg-logo="https://toffeelive.com/images/channels/b4u_movies.png",B4U Movies
+https://bldcmprod-cdn.toffeelive.com/cdn/live/b4u_movies/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Action" tvg-logo="https://toffeelive.com/images/channels/zee_action.png",Zee Action
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_action/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Bollywood" tvg-logo="https://toffeelive.com/images/channels/zee_bolly.png",Zee Bollywood
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bolly/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY PIX HD" tvg-logo="https://toffeelive.com/images/channels/sony_pix_hd.png",SONY PIX HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_pix_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY PIX" tvg-logo="https://toffeelive.com/images/channels/sony_pix.png",SONY PIX
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_pix/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="I Film English" tvg-logo="https://toffeelive.com/images/channels/iflim_english.png",I Film English
+https://bldcmprod-cdn.toffeelive.com/cdn/live/iflim_english/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Lotus Macau" tvg-logo="https://toffeelive.com/images/channels/lotus_macau.png",Lotus Macau
+https://bldcmprod-cdn.toffeelive.com/cdn/live/lotus_macau/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Quran TV" tvg-logo="https://toffeelive.com/images/channels/quran_tv.png",Quran TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/quran_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Sunnah TV" tvg-logo="https://toffeelive.com/images/channels/sunnah_tv.png",Sunnah TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sunnah_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="AL Jazeera" tvg-logo="https://toffeelive.com/images/channels/aljazeera.png",AL Jazeera
+https://bldcmprod-cdn.toffeelive.com/cdn/live/aljazeera/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="CNN VIP" tvg-logo="https://toffeelive.com/images/channels/cnn.png",CNN VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/cnn/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="DW" tvg-logo="https://toffeelive.com/images/channels/dw.png",DW
+https://bldcmprod-cdn.toffeelive.com/cdn/live/dw/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee News" tvg-logo="https://toffeelive.com/images/channels/zee_news.png",Zee News
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_news/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="RTR Planeta" tvg-logo="https://toffeelive.com/images/channels/rtr_planet.png",RTR Planeta
+https://bldcmprod-cdn.toffeelive.com/cdn/live/rtr_planet/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Euro News VIP" tvg-logo="https://toffeelive.com/images/channels/euro_news.png",Euro News VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/euro_news/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Arirang TV" tvg-logo="https://toffeelive.com/images/channels/arirang.png",Arirang TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/arirang/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Channel News Asia" tvg-logo="https://toffeelive.com/images/channels/channel_n_asia.png",Channel News Asia
+https://bldcmprod-cdn.toffeelive.com/cdn/live/channel_n_asia/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Business VIP" tvg-logo="https://toffeelive.com/images/channels/zee_business.png",Zee Business VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_business/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="KBS World 24" tvg-logo="https://toffeelive.com/images/channels/kbs_world24.png",KBS World 24
+https://bldcmprod-cdn.toffeelive.com/cdn/live/kbs_world24/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TV5Monde" tvg-logo="https://toffeelive.com/images/channels/tv5_monde.png",TV5Monde
+https://bldcmprod-cdn.toffeelive.com/cdn/live/tv5_monde/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Aljazeera Arabic" tvg-logo="https://toffeelive.com/images/channels/aljazeera_arabic.png",Aljazeera Arabic
+https://bldcmprod-cdn.toffeelive.com/cdn/live/aljazeera_arabic/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="NHK World-Japan" tvg-logo="https://toffeelive.com/images/channels/nhk_world.png",NHK World-Japan
+https://bldcmprod-cdn.toffeelive.com/cdn/live/nhk_world/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="France24" tvg-logo="https://toffeelive.com/images/channels/france24.png",France24
+https://bldcmprod-cdn.toffeelive.com/cdn/live/france24/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="RT" tvg-logo="https://toffeelive.com/images/channels/rt.png",RT
+https://bldcmprod-cdn.toffeelive.com/cdn/live/rt/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TRT World" tvg-logo="https://toffeelive.com/images/channels/trtworld.png",TRT World
+https://bldcmprod-cdn.toffeelive.com/cdn/live/trtworld/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="ZOOM" tvg-logo="https://toffeelive.com/images/channels/zoom_tv.png",ZOOM
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zoom_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="B4U Music" tvg-logo="https://toffeelive.com/images/channels/b4umusic.png",B4U Music
+https://bldcmprod-cdn.toffeelive.com/cdn/live/b4umusic/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="MTV Beats HD" tvg-logo="https://toffeelive.com/images/channels/mtv_beats_hd.png",MTV Beats HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/mtv_beats_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="MTV India" tvg-logo="https://toffeelive.com/images/channels/mtv.png",MTV India
+https://bldcmprod-cdn.toffeelive.com/cdn/live/mtv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zing" tvg-logo="https://toffeelive.com/images/channels/zing_sd.png",Zing
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zing_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="VH1 HD" tvg-logo="https://toffeelive.com/images/channels/vh1_hd.png",VH1 HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/vh1_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Animal Planet HD" tvg-logo="https://toffeelive.com/images/channels/animal_planet_hd.png",Animal Planet HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/animal_planet_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="NGC VIP" tvg-logo="https://toffeelive.com/images/channels/ngc_sd.png",NGC VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ngc_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Animal Planet" tvg-logo="https://toffeelive.com/images/channels/animal_planet_sd.png",Animal Planet
+https://bldcmprod-cdn.toffeelive.com/cdn/live/animal_planet_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery HD" tvg-logo="https://toffeelive.com/images/channels/discovery_hd.png",Discovery HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="NGC Wild VIP" tvg-logo="https://toffeelive.com/images/channels/ngc_wild.png",NGC Wild VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/ngc_wild/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery" tvg-logo="https://toffeelive.com/images/channels/discovery_sd.png",Discovery
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery Science" tvg-logo="https://toffeelive.com/images/channels/discovery_science.png",Discovery Science
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_science/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Fox Life VIP" tvg-logo="https://toffeelive.com/images/channels/fox_life.png",Fox Life VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/fox_life/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery Asia" tvg-logo="https://toffeelive.com/images/channels/discovery_asia.png",Discovery Asia
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_asia/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Discovery Turbo" tvg-logo="https://toffeelive.com/images/channels/discovery_turbo.png",Discovery Turbo
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_turbo/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Investigation Discovery HD" tvg-logo="https://toffeelive.com/images/channels/discovery_india_id_hd.png",Investigation Discovery HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_india_id_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Investigation Discovery" tvg-logo="https://toffeelive.com/images/channels/discovery_india_id_sd.png",Investigation Discovery
+https://bldcmprod-cdn.toffeelive.com/cdn/live/discovery_india_id_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TLC HD" tvg-logo="https://toffeelive.com/images/channels/tlc_hd.png",TLC HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/tlc_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="TLC" tvg-logo="https://toffeelive.com/images/channels/tlc_sd.png",TLC
+https://bldcmprod-cdn.toffeelive.com/cdn/live/tlc_sd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="HISTORY TV" tvg-logo="https://toffeelive.com/images/channels/history_tv.png",HISTORY TV
+https://bldcmprod-cdn.toffeelive.com/cdn/live/history_tv/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY BBC EARTH HD" tvg-logo="https://toffeelive.com/images/channels/sony_bbc_earth_hd.png",SONY BBC EARTH HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_bbc_earth_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="SONY BBC EARTH" tvg-logo="https://toffeelive.com/images/channels/sony_bbc_earth.png",SONY BBC EARTH
+https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_bbc_earth/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Tech Storm VIP" tvg-logo="https://toffeelive.com/images/channels/tech_storm.png",Tech Storm VIP
+https://bldcmprod-cdn.toffeelive.com/cdn/live/tech_storm/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Zee Café HD" tvg-logo="https://toffeelive.com/images/channels/zee_cafe_hd.png",Zee Café HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_cafe_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Infinity HD" tvg-logo="https://toffeelive.com/images/channels/colors_infinity_hd.png",Infinity HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/colors_infinity_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
+#EXTINF:-1 tvg-name="Comedy Central HD" tvg-logo="https://toffeelive.com/images/channels/comedy_central_hd.png",Comedy Central HD
+https://bldcmprod-cdn.toffeelive.com/cdn/live/comedy_central_hd/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
