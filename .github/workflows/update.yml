@@ -2,8 +2,8 @@ name: Toffee Tracker Auto Update
 
 on:
   schedule:
-    - cron: '0 */3 * * *' 
-  workflow_dispatch:      
+    - cron: '0 */3 * * *'     # Runs automatically every 3 hours
+  workflow_dispatch:          # <-- CRITICAL: This is what creates the manual "Run workflow" button!
 
 permissions:
   contents: write
@@ -14,11 +14,9 @@ jobs:
 
     steps:
       - name: Checkout Repository Code
-        # Bump to explicitly handle the Node 24 runtime transition cleanly
         uses: actions/checkout@v4.2.2 
 
       - name: Set up Python Environment
-        # Version 5.3.0+ natively targets Node 24 to clear runner log warnings
         uses: actions/setup-python@v5.3.0
         with:
           python-version: '3.10'
@@ -28,7 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-     - name: Run Extraction Engine
+      - name: Run Extraction Engine
         run: python extract_toffee.py
 
       - name: Commit and Push Generated Playlists
@@ -36,10 +34,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
-          # Force Git to stage all updated output formats explicitly
+          # Force Git to check if any of these files have changes
           git add toffee_data.json Ns_player.m3u OTT_Navigator.m3u
           
+          # Only commit if changes actually exist to avoid workflow crash loops
           git diff-index --quiet HEAD || git commit -m "Update live streaming playlists [skip ci]"
           
-          git pull --rebase origin main
-          git push origin main
+          git push origin HEAD
