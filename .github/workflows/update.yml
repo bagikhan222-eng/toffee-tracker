@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run Extraction Engine
+     - name: Run Extraction Engine
         run: python extract_toffee.py
 
       - name: Commit and Push Generated Playlists
@@ -36,6 +36,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           
+          # Force Git to stage all updated output formats explicitly
           git add toffee_data.json Ns_player.m3u OTT_Navigator.m3u
           
           git diff-index --quiet HEAD || git commit -m "Update live streaming playlists [skip ci]"
