@@ -19,7 +19,6 @@ def run_comprehensive_extraction():
     print("⚽ Injecting dynamic FIFA World Cup Broadcast Channels...")
     fifa_logo_url = "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB"
     
-    # We define the structure natively so it never depends on local runner DNS lookups
     fifa_channels = [
         {"name": "FIFA Live 1", "slug": "fifa_2026_1", "short_name": "ARG vs FRA"},
         {"name": "FIFA Live 2", "slug": "fifa_2026_2", "short_name": "BRA vs GER"},
@@ -46,9 +45,9 @@ def run_comprehensive_extraction():
         }
         output_payload["channels"].append(channel_block)
 
-    # 2. Extract Generic Live TV from public mirror dataset without hitting DNS blocks
+    # 2. Extract Generic Live TV - Filtering for Active Status Flags Natively
     try:
-        print("📡 Syncing catalog matrix from mirror repository directory...")
+        print("📡 Syncing live catalog data from mirror stream repository...")
         response = requests.get(token_source, timeout=10)
         
         items = []
@@ -58,53 +57,56 @@ def run_comprehensive_extraction():
                 items = mirror_json.get("channels", [])
             except Exception:
                 pass
-                
-        # If the mirror is down, deploy the high-tier fallback channels list
-        if not items:
-            print("⚠️ Mirror response invalid. Deploying high-tier core fallback template arrays.")
-            items = [
-                {"name": "Sony Ten Sports 1 HD", "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8"},
-                {"name": "Zee Bangla", "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8"},
-                {"name": "BTV World", "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/btv_world/playlist.m3u8"},
-                {"name": "Cartoon Network", "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network/playlist.m3u8"},
-                {"name": "Jamuna TV", "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8"}
-            ]
+
+        active_count = 0
+        skipped_count = 0
 
         for item in items:
             name = item.get("name", "Unknown Channel")
             link = item.get("link", "")
+            item_headers = item.get("headers", {})
             
-            # Skip appending duplicate entries of your custom manually injected FIFA streams
+            # Extract cookies defensively across case mismatches
+            cookie = item_headers.get("cookie") or item_headers.get("Cookie") or ""
+
+            # --- CRITICAL FILTER RULES FOR ACTIVE STREAMS ---
+            # 1. Skip duplicate entries of manually handled tournament nodes
             if "fifa" in name.lower() or "fifa" in link.lower():
                 continue
-                
-            if link:
-                # Re-calculate correct clean slug matching properties
-                parts = link.split('/live/')
-                slug = parts[1].split('/')[0] if len(parts) > 1 else name.lower().replace(" ", "_")
-                logo_image = f"https://toffeelive.com/images/channels/{slug}.png"
-                
-                channel_block = {
-                    "name": name,
-                    "short_name": name,
-                    "link": link,
-                    "logo": logo_image,
-                    "headers": {
-                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-                        "Origin": "https://toffeelive.com",
-                        "Referer": "https://toffeelive.com/"
-                    }
-                }
-                output_payload["channels"].append(channel_block)
+            
+            # 2. Skip channels if the token signature is missing, expired, or truncated (dead links)
+            if not link or not cookie or len(cookie.strip()) < 25:
+                skipped_count += 1
+                continue
 
+            # Re-calculate correct clean slug matching properties
+            parts = link.split('/live/')
+            slug = parts[1].split('/')[0] if len(parts) > 1 else name.lower().replace(" ", "_")
+            logo_image = f"https://toffeelive.com/images/channels/{slug}.png"
+            
+            channel_block = {
+                "name": name,
+                "short_name": name,
+                "link": link,
+                "logo": logo_image,
+                "headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                    "Origin": "https://toffeelive.com",
+                    "Referer": "https://toffeelive.com/"
+                }
+            }
+            output_payload["channels"].append(channel_block)
+            active_count += 1
+
+        print(f"💡 Active live filters applied: Kept {active_count} channels, dropped {skipped_count} inactive entries.")
         output_payload["channels_amount"] = len(output_payload["channels"])
         
-        # Write files directly to disk without executing connections against bldcmprod-cdn
+        # Write files directly to disk
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
-        print("🎉 'toffee_data.json' generated successfully.")
+        print("🎉 'toffee_data.json' updated successfully.")
 
-        # 3. Write Ns_player.m3u
+        # 3. Write Ns_player.m3u (Only active filtered channels)
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
             ns_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
@@ -114,9 +116,9 @@ def run_comprehensive_extraction():
                 display_name = ch.get("short_name", ch["name"])
                 ns_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{display_name}\n')
                 ns_file.write(f'{ch["link"]}|User-Agent={ua}&Origin={origin}&Referer={referer}\n')
-        print("🎉 'Ns_player.m3u' generated successfully.")
+        print("🎉 'Ns_player.m3u' updated successfully.")
 
-        # 4. Write OTT_Navigator.m3u
+        # 4. Write OTT_Navigator.m3u (Only active filtered channels)
         with open("OTT_Navigator.m3u", "w", encoding="utf-8") as ott_file:
             ott_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
@@ -127,7 +129,7 @@ def run_comprehensive_extraction():
                 ott_file.write(f'#EXTINF:-1 tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}",{display_name}\n')
                 ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"{origin}","Referer":"{referer}"}}\n')
                 ott_file.write(f'{ch["link"]}\n')
-        print("🎉 'OTT_Navigator.m3u' generated successfully.")
+        print("🎉 'OTT_Navigator.m3u' updated successfully.")
 
     except Exception as e:
         print(f"💥 Aggregator pipeline encountered an error: {e}")
