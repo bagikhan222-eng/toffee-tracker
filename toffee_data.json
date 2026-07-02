@@ -1,10 +1,10 @@
 {
     "channels": [
         {
-            "channel_name": "FIFA World Cup Live 1",
-            "current_match": "ENG vs DRC",
-            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8",
-            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
+            "channel_name": "T Sports HD",
+            "current_match": "T Sports Live",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/t_sports/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/t_sports.png",
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -13,32 +13,8 @@
             }
         },
         {
-            "channel_name": "FIFA World Cup Live 2",
-            "current_match": "BEL vs SEN",
-            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_2/playlist.m3u8",
-            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "connection_headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "allowed_countries=BD; country=US; state=DHK"
-            }
-        },
-        {
-            "channel_name": "FIFA World Cup Live 3",
-            "current_match": "USA vs BOS",
-            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_3/playlist.m3u8",
-            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "connection_headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/",
-                "Cookie": "allowed_countries=BD; country=US; state=DHK"
-            }
-        },
-        {
-            "channel_name": "Sony Ten Sports 1 HD",
-            "current_match": "Sony Ten 1",
+            "channel_name": "Sony Sports Ten 1",
+            "current_match": "Sony Ten 1 HD",
             "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8",
             "channel_logo": "https://toffeelive.com/images/channels/sony_ten_1.png",
             "connection_headers": {
@@ -49,8 +25,44 @@
             }
         },
         {
+            "channel_name": "Somoy TV",
+            "current_match": "Somoy News Live",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/somoy_tv.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
+            }
+        },
+        {
+            "channel_name": "Jamuna TV",
+            "current_match": "Jamuna News Live",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
+            }
+        },
+        {
+            "channel_name": "Independent TV",
+            "current_match": "Independent Live",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/independent_tv/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/independent_tv.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
+            }
+        },
+        {
             "channel_name": "Zee Bangla",
-            "current_match": "Zee Bangla",
+            "current_match": "Zee Bangla HD",
             "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
             "channel_logo": "https://toffeelive.com/images/channels/zee_bangla.png",
             "connection_headers": {
@@ -61,10 +73,10 @@
             }
         },
         {
-            "channel_name": "Jamuna TV",
-            "current_match": "Jamuna TV",
-            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
-            "channel_logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
+            "channel_name": "Star Jalsha",
+            "current_match": "Star Jalsha HD",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/star_jalsha/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/star_jalsha.png",
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
@@ -73,7 +85,7 @@
             }
         }
     ],
-    "channels_amount": 6,
+    "channels_amount": 7,
     "status": "active",
-    "last_updated_timestamp": "2026-07-02 03:15:03"
+    "last_updated_timestamp": "2026-07-02 03:41:27"
 }
