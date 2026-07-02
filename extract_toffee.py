@@ -1,6 +1,7 @@
 import json
 import requests
 import re
+from datetime import datetime
 
 def extract_directly_from_toffee():
     print("✅ Mobile profile cookies injected.")
@@ -46,7 +47,6 @@ def extract_directly_from_toffee():
                     except:
                         continue
 
-        # Force structural fallbacks if the scraper script runs on an isolated server block
         if not raw_channels:
             print("💡 Web interface hidden from runner. Generating current dynamic tournament nodes...")
             raw_channels = [
@@ -78,7 +78,7 @@ def extract_directly_from_toffee():
             channel_block = {
                 "channel_name": raw_name,
                 "current_match": display_title,
-                "stream_url": link,             # Match index.php search tag parameter
+                "stream_url": link,
                 "channel_logo": logo_url,
                 "connection_headers": {
                     "User-Agent": headers["User-Agent"],
@@ -94,27 +94,34 @@ def extract_directly_from_toffee():
 
         output_payload["channels"] = sports_group + general_group
         output_payload["channels_amount"] = len(output_payload["channels"])
+        
+        # Inject dynamic tracking variables to guarantee file change status
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        output_payload["last_updated_timestamp"] = current_time
 
+        # 1. Save toffee_data.json
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
         print("🎉 'toffee_data.json' updated directly from Toffee structural templates.")
 
-        # Write out Ns_player.m3u
+        # 2. Save Ns_player.m3u
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
-            ns_file.write("#EXTM3U\n")
+            ns_file.write(f"#EXTM3U\n#TIMESTAMP: {current_time}\n")
             for ch in output_payload["channels"]:
                 ua = ch["connection_headers"]["User-Agent"]
                 ns_file.write(f'#EXTINF:-1 tvg-name="{ch["channel_name"]}" tvg-logo="{ch["channel_logo"]}",{ch["current_match"]}\n')
                 ns_file.write(f'{ch["stream_url"]}|User-Agent={ua}&Origin=https://toffeelive.com&Referer=https://toffeelive.com/\n')
+        print("🎉 'Ns_player.m3u' generated with updated timestamp parameter.")
 
-        # Write out OTT_Navigator.m3u
+        # 3. Save OTT_Navigator.m3u
         with open("OTT_Navigator.m3u", "w", encoding="utf-8") as ott_file:
-            ott_file.write("#EXTM3U\n")
+            ott_file.write(f"#EXTM3U\n#TIMESTAMP: {current_time}\n")
             for ch in output_payload["channels"]:
                 ua = ch["connection_headers"]["User-Agent"]
                 ott_file.write(f'#EXTINF:-1 tvg-name="{ch["channel_name"]}" tvg-logo="{ch["channel_logo"]}",{ch["current_match"]}\n')
                 ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/"}}\n')
                 ott_file.write(f'{ch["stream_url"]}\n')
+        print("🎉 'OTT_Navigator.m3u' generated with updated timestamp parameter.")
 
     except Exception as e:
         print(f"💥 Native extraction failed: {e}")
