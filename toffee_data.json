@@ -8,7 +8,8 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         },
         {
@@ -19,7 +20,8 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         },
         {
@@ -30,18 +32,8 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
-            }
-        },
-        {
-            "channel_name": "FIFA World Cup Rewatch",
-            "current_match": "MATCH REWATCH",
-            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_4/playlist.m3u8",
-            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "connection_headers": {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         },
         {
@@ -52,7 +44,8 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         },
         {
@@ -63,7 +56,8 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         },
         {
@@ -74,11 +68,12 @@
             "connection_headers": {
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
                 "Origin": "https://toffeelive.com",
-                "Referer": "https://toffeelive.com/"
+                "Referer": "https://toffeelive.com/",
+                "Cookie": "allowed_countries=BD; country=US; state=DHK"
             }
         }
     ],
-    "channels_amount": 7,
+    "channels_amount": 6,
     "status": "active",
-    "last_updated_timestamp": "2026-07-02 03:06:01"
+    "last_updated_timestamp": "2026-07-02 03:15:03"
 }
