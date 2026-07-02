@@ -1,4 +1,5 @@
 #EXTM3U
+#TIMESTAMP: 2026-07-02 03:06:01
 #EXTINF:-1 tvg-name="FIFA World Cup Live 1" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",ENG vs DRC
 https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36&Origin=https://toffeelive.com&Referer=https://toffeelive.com/
 #EXTINF:-1 tvg-name="FIFA World Cup Live 2" tvg-logo="https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",BEL vs SEN

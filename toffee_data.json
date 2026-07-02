@@ -79,5 +79,6 @@
         }
     ],
     "channels_amount": 7,
-    "status": "active"
+    "status": "active",
+    "last_updated_timestamp": "2026-07-02 03:06:01"
 }
