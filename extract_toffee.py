@@ -9,7 +9,6 @@ def extract_directly_from_toffee():
 
     platform_url = "https://toffeelive.com"
     
-    # Root payload layout using Toffee's official branding syntax
     output_payload = {
         "channels": [],
         "channels_amount": 0,
@@ -30,7 +29,6 @@ def extract_directly_from_toffee():
         page_response = requests.get(platform_url, headers=headers, timeout=15)
         
         if page_response.status_code == 200:
-            # Parse the live hydration state data where daily match updates are loaded
             json_js_match = re.search(r'\"channels\"\s*:\s*(\[.*?\])', page_response.text)
             if json_js_match:
                 try:
@@ -38,7 +36,6 @@ def extract_directly_from_toffee():
                 except:
                     pass
             
-            # Sub-regex block parser if page objects are inline-mapped differently
             if not raw_channels:
                 blocks = re.findall(r'\{\"id\":[^\}]+?\"name\":[^\}]+?\}', page_response.text)
                 for block in blocks:
@@ -49,7 +46,7 @@ def extract_directly_from_toffee():
                     except:
                         continue
 
-        # Automated Fallback matching the active tournament matrix if the cloud node experiences a layout shift
+        # Force structural fallbacks if the scraper script runs on an isolated server block
         if not raw_channels:
             print("💡 Web interface hidden from runner. Generating current dynamic tournament nodes...")
             raw_channels = [
@@ -67,12 +64,10 @@ def extract_directly_from_toffee():
 
         for item in raw_channels:
             raw_name = item.get("name", "Live Channel").strip()
-            # Grabs the actual live match text (e.g. "ENG vs DRC") over a static name slot
             display_title = item.get("title") or item.get("short_name") or raw_name
             slug = item.get("slug") or item.get("id") or raw_name.lower().replace(" ", "_")
             link = f"https://bldcmprod-cdn.toffeelive.com/cdn/live/{slug}/playlist.m3u8"
             
-            # Determine if it matches an active World Cup broadcast card
             if "fifa" in raw_name.lower() or "world cup" in raw_name.lower() or "match" in raw_name.lower():
                 logo_url = "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB"
                 is_sports = True
@@ -80,11 +75,10 @@ def extract_directly_from_toffee():
                 logo_url = item.get("logo") or f"https://toffeelive.com/images/channels/{slug}.png"
                 is_sports = False
 
-            # TOFFEE FORMAT SCHEMA
             channel_block = {
                 "channel_name": raw_name,
                 "current_match": display_title,
-                "stream_url": link,
+                "stream_url": link,             # Match index.php search tag parameter
                 "channel_logo": logo_url,
                 "connection_headers": {
                     "User-Agent": headers["User-Agent"],
@@ -98,25 +92,22 @@ def extract_directly_from_toffee():
             else:
                 general_group.append(channel_block)
 
-        # Merge slots to make sure live-broadcasting cards sit at the very top of the arrays
         output_payload["channels"] = sports_group + general_group
         output_payload["channels_amount"] = len(output_payload["channels"])
 
-        # 1. Write to toffee_data.json
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
         print("🎉 'toffee_data.json' updated directly from Toffee structural templates.")
 
-        # 2. Write to Ns_player.m3u (Toffee Core layout)
+        # Write out Ns_player.m3u
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
             ns_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
                 ua = ch["connection_headers"]["User-Agent"]
                 ns_file.write(f'#EXTINF:-1 tvg-name="{ch["channel_name"]}" tvg-logo="{ch["channel_logo"]}",{ch["current_match"]}\n')
                 ns_file.write(f'{ch["stream_url"]}|User-Agent={ua}&Origin=https://toffeelive.com&Referer=https://toffeelive.com/\n')
-        print("🎉 'Ns_player.m3u' generated directly from source variables.")
 
-        # 3. Write to OTT_Navigator.m3u (Toffee Core layout)
+        # Write out OTT_Navigator.m3u
         with open("OTT_Navigator.m3u", "w", encoding="utf-8") as ott_file:
             ott_file.write("#EXTM3U\n")
             for ch in output_payload["channels"]:
@@ -124,10 +115,9 @@ def extract_directly_from_toffee():
                 ott_file.write(f'#EXTINF:-1 tvg-name="{ch["channel_name"]}" tvg-logo="{ch["channel_logo"]}",{ch["current_match"]}\n')
                 ott_file.write(f'#EXTHTTP:{{"User-Agent":"{ua}","Origin":"https://toffeelive.com","Referer":"https://toffeelive.com/"}}\n')
                 ott_file.write(f'{ch["stream_url"]}\n')
-        print("🎉 'OTT_Navigator.m3u' generated directly from source variables.")
 
-    except Exception as pipeline_error:
-        print(f"💥 Native extraction failed: {pipeline_error}")
+    except Exception as e:
+        print(f"💥 Native extraction failed: {e}")
 
 if __name__ == "__main__":
     extract_directly_from_toffee()
