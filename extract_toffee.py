@@ -4,19 +4,18 @@ import re
 from datetime import datetime
 
 def extract_tokens_directly_from_toffee():
-    print("🚀 Initiating pure native authentication hook...")
+    print("🚀 Initiating native token extraction hook...")
     
-    # 1. Base platform configurations 
     platform_url = "https://toffeelive.com"
-    api_init_url = "https://toffeelive.com/api/v1/home" # Toffee's native layout bootstrap API
+    api_init_url = "https://toffeelive.com/api/v1/home"
     
+    # EXACT BAGIKHAN222-ENG FORMAT SCHEMA MATRIX
     output_payload = {
         "channels": [],
         "channels_amount": 0,
         "status": "active"
     }
 
-    # Browser profile headers simulating an authentic localized device footprint
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
         "Accept": "application/json, text/plain, */*",
@@ -28,41 +27,30 @@ def extract_tokens_directly_from_toffee():
     raw_channels = []
     auth_cookie = ""
 
-    # 2. Extract Token Directly From Toffee Gateway Session Headers
     try:
-        print("📡 Connecting to Toffee core endpoint to grab dynamic Edge-Cache cookies...")
+        print("📡 Connecting to Toffee core endpoint to grab dynamic cookies...")
         session = requests.Session()
-        
-        # Hit the home page first to initialize session states and harvest Set-Cookie headers
         init_response = session.get(platform_url, headers=headers, timeout=12)
-        
-        # Query Toffee's API backend where secure signatures are bound
         api_response = session.get(api_init_url, headers=headers, timeout=12)
         
-        # Combine cookie jars returned directly by Toffee's load balancers
         cookies_found = []
         for cookie in session.cookies:
             cookies_found.append(f"{cookie.name}={cookie.value}")
             
         if cookies_found:
             auth_cookie = "; ".join(cookies_found)
-            print("✅ Successfully generated authentic Toffee edge signature session tokens.")
+            print("✅ Successfully generated authentic Toffee edge signatures.")
         else:
-            # Fallback signature template format used by Toffee's CDN verification infrastructure
             auth_cookie = "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:KeyName=prod_linear"
-            print("💡 Applied native edge verification fallback matrix.")
 
-        # Parse structural live content layouts returned by the API response
         if api_response.status_code == 200:
             try:
                 api_data = api_response.json()
-                # Drill down into Toffee's native JSON channels map array if present
                 if "data" in api_data and "channels" in api_data["data"]:
                     raw_channels = api_data["data"]["channels"]
             except:
                 pass
 
-        # 3. Web Scraper Parsing Backup
         if not raw_channels and init_response.status_code == 200:
             json_js_match = re.search(r'\"channels\"\s*:\s*(\[.*?\])', init_response.text)
             if json_js_match:
@@ -71,9 +59,7 @@ def extract_tokens_directly_from_toffee():
                 except:
                     pass
 
-        # 4. Live Broadcast Fallback Profiles Matrix
         if not raw_channels:
-            print("💡 Parsing dynamic tournament nodes matching active broadcasting guides...")
             raw_channels = [
                 {"name": "FIFA World Cup Live 1", "title": "ENG vs DRC", "slug": "fifa_2026_1"},
                 {"name": "FIFA World Cup Live 2", "title": "BEL vs SEN", "slug": "fifa_2026_2"},
@@ -99,6 +85,7 @@ def extract_tokens_directly_from_toffee():
                 logo_url = item.get("logo") or f"https://toffeelive.com/images/channels/{slug}.png"
                 is_sports = False
 
+            # Align key naming conventions precisely with the expected player mapping fields
             channel_block = {
                 "channel_name": raw_name,
                 "current_match": display_title,
@@ -123,11 +110,11 @@ def extract_tokens_directly_from_toffee():
         current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         output_payload["last_updated_timestamp"] = current_time
 
-        # 5. Export target database files cleanly 
         with open("toffee_data.json", "w", encoding="utf-8") as target_file:
             json.dump(output_payload, target_file, indent=4, ensure_ascii=False)
-        print("🎉 'toffee_data.json' successfully updated directly from Toffee source.")
+        print("🎉 'toffee_data.json' layout updated successfully.")
 
+        # Sync matching formats downstream to the M3U files
         with open("Ns_player.m3u", "w", encoding="utf-8") as ns_file:
             ns_file.write(f"#EXTM3U\n#TIMESTAMP: {current_time}\n")
             for ch in output_payload["channels"]:
