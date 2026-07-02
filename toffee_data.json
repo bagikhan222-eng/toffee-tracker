@@ -1,66 +1,80 @@
 {
     "channels": [
         {
-            "name": "ENG vs DRC",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "FIFA World Cup Live 1",
+            "current_match": "ENG vs DRC",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_1/playlist.m3u8",
+            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "BEL vs SEN",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_2/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "FIFA World Cup Live 2",
+            "current_match": "BEL vs SEN",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_2/playlist.m3u8",
+            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "USA vs BOS",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_3/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "FIFA World Cup Live 3",
+            "current_match": "USA vs BOS",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_3/playlist.m3u8",
+            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "MATCH REWATCH",
-            "logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_4/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "FIFA World Cup Rewatch",
+            "current_match": "MATCH REWATCH",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/fifa_2026_4/playlist.m3u8",
+            "channel_logo": "https://digitalhub.fifa.com/transform/58a5f396-8575-4d04-89b5-c0d235bfd3c4/FWC26_Brand-Mark_Linear_POS_RGB",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "Sony Ten 1",
-            "logo": "https://toffeelive.com/images/channels/sony_ten_1.png",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "Sony Ten Sports 1 HD",
+            "current_match": "Sony Ten 1",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_ten_1/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/sony_ten_1.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "Zee Bangla",
-            "logo": "https://toffeelive.com/images/channels/zee_bangla.png",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "Zee Bangla",
+            "current_match": "Zee Bangla",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/zee_bangla/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/zee_bangla.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         },
         {
-            "name": "Jamuna TV",
-            "logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
-            "link": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
-            "headers": {
-                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29tLw:Expires=1705020493:KeyName=prod_linear:Signature=w2ySD7Tkjctn-6eXtWhNB6RurGUaevzkgcHk9dkTWlfzrBSzyBPkcB6wVa7T5fpEgowY_QOb8cGpiL1Ru6TGCA"
+            "channel_name": "Jamuna TV",
+            "current_match": "Jamuna TV",
+            "stream_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8",
+            "channel_logo": "https://toffeelive.com/images/channels/jamuna_tv.png",
+            "connection_headers": {
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+                "Origin": "https://toffeelive.com",
+                "Referer": "https://toffeelive.com/"
             }
         }
     ],
