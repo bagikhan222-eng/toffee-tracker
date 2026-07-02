@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Checkout Repository Code
-        uses: actions/checkout@v4.2.2  # Uses the exact patch release updated for Node runtimes
+        uses: actions/checkout@v5       # Upgraded to v5 for native Node 24 support
 
       - name: Set up Python Environment
-        uses: actions/setup-python@v5.4.0  # Upgraded to clear deprecation logs
+        uses: actions/setup-python@v6   # Upgraded to v6 to clear all deprecation logs natively
         with:
           python-version: '3.10'
 
